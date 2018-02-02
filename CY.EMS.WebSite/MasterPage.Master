@@ -1,0 +1,88 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="CY.EMS.WebSite.MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>常运物流人事管理系统</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="CSS/css.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        body {
+            margin: 10px 5px 15px 190px;
+        }
+
+        .menu {
+            width: 100%;
+            padding: 0px;
+        }
+
+        #footer {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="zhong">
+            <div class="top">
+                <div class="top_left">
+                    常运物流
+                </div>
+                <div class="top_right">
+                    <div class="top_right_1">
+                        <a href="javascript:window.external.addFavorite('http://192.168.0.20/CYHRMS/','常运人力管理系统')">
+                            <span style="font-size: 10pt">加入收藏</span>
+                        </a>
+                        <span>| </span>
+                        <a href="Login.aspx" onclick="this.style.behavior='url(http://192.168.0.20/CYHRMS/)';this.setHomePage('192.168.0.20')">
+                            <span style="font-size: 10pt">设为首页</span>
+                        </a>
+                        <span>| </span>
+                        <dx:ASPxButton ID="btnLogOut0" runat="server" Text="登出" OnClick="Button1_Click" Theme="Aqua" UseSubmitBehavior="False">
+                        </dx:ASPxButton>
+                        <span>| </span>
+                        <asp:Label ID="Label3" runat="server" ForeColor="Green"></asp:Label>
+                    </div>
+                </div>
+                <div class="clear">
+                </div>
+            </div>
+            <div class="banner">
+                <%--      <img src="Images/img_2.gif" style="height: 67px; width: 1151px" />--%>
+            </div>
+            <div class="main">
+                <div>
+                    <dx:ASPxSplitter ID="ASPxSplitter1" runat="server" Height="600px" Width="104%" Theme="DevEx">
+                        <Panes>
+                            <dx:SplitterPane Size="180px" ScrollBars="Auto" ShowCollapseBackwardButton="True">
+                                <ContentCollection>
+                                    <dx:SplitterContentControl ID="SplitterContentControl1" runat="server">
+                                        <dx:ASPxNavBar ID="ASPxNavBar1" runat="server" CssClass="menu" Theme="DevEx" />
+                                    </dx:SplitterContentControl>
+                                </ContentCollection>
+                            </dx:SplitterPane>
+                            <dx:SplitterPane ScrollBars="Auto">
+                                <ContentCollection>
+                                    <dx:SplitterContentControl ID="SplitterContentControl2" runat="server">
+                                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                        </asp:ContentPlaceHolder>
+                                    </dx:SplitterContentControl>
+                                </ContentCollection>
+                            </dx:SplitterPane>
+                        </Panes>
+                        <Border BorderStyle="None" />
+                        <Border BorderStyle="None"></Border>
+                    </dx:ASPxSplitter>
+                    <div id="footer">
+                        地址：江苏省常州市中吴大道570号 邮编：213001 电话：0519-88124631 传真：0519-88122873 网址：http://www.cy-logistics.cn/ <a href="mailto:邮箱：cywlzx@cywlzx.cn">邮箱：cywlzx@cywlzx.cn</a>
+                        <br />
+                        版权所有 2015-2016 <a href="http://www.BING.cn">常运物流</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,9 @@
+﻿.leftZone,
+.rightZone
+{
+	float: left;
+}
+.leftZone 
+{
+	margin-right: 3px;
+}

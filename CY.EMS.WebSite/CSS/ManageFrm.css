@@ -1,0 +1,100 @@
+﻿.QueryPanel /* 查询条件背景 */ {
+    background-color: #CED8F6;
+    height: 30px;
+    width: 100%;
+    margin: 3px;
+}
+
+.QueryLabel, .QueryLabelBegin /* 查询条件标签 */ {
+    float: left;
+    width: 70px;
+    margin-right: 3px;
+    margin-left: 3px;
+    /*vertical-align:middle;*/
+    margin-top: 8px;
+}
+
+.QueryLabelBegin {
+    clear: both; /* 左右侧不允许出现float */
+}
+
+.QueryInput /* 查询条件输入 */ {
+    float: left;
+    width: 130px;
+    height: 23px;
+    margin-right: 5px;
+    margin-top: 4px;
+}
+
+.Action /* 动作 */ {
+    float: left;
+    margin: 3px;
+}
+
+.Grid {
+    width: 100%;
+    margin: 3px;
+}
+
+.EditPanel250, .EditPanel500 {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    text-align:center;
+}
+
+.EditPanel250 {
+    width: 260px;
+}
+
+.EditPanel500 {
+    width: 520px;
+}
+
+.EditActionPanel250, .EditActionPanel500 {
+    width: 500px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:right;
+}
+
+.EditActionPanel250 {
+    width: 250px;
+}
+
+.EditActionPanel500 {
+    width: 500px;
+}
+
+.EditLabel, .EditLabelBegin {
+    float: left;
+    width: 90px;
+    margin-right: 3px;
+    margin-left: 3px;
+    /*vertical-align:middle;*/
+    margin-top: 8px;
+}
+
+.EditLabelBegin {
+    clear: both; /* 左右侧不允许出现float */
+}
+
+.EditInput {
+    float: left;
+    width: 150px;
+    height: 23px;
+    margin-right: 5px;
+    margin-top: 4px;
+}
+
+.EditMemo {
+    float: left;
+    width: 410px;
+    height: 60px;
+    margin-right: 5px;
+    margin-top: 4px;
+}
